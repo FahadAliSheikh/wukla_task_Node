@@ -1,0 +1,11 @@
+const http = require('http');
+const app = require('./app');
+
+const port =process.env.port || 8080;
+
+const server = http.createServer(app);
+
+server.listen(port,function(req,res){
+    // print('server is running');
+    console.log("server is running on port " + port);
+});
