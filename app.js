@@ -36,7 +36,7 @@ app.use(bodyParser.json());
 // });
 
 // Routes which should handle requests
- app.use("/recipe", recipeRoutes);
+ app.use("/recipes", recipeRoutes);
 
 app.use((req, res, next) => {
   const error = new Error("Not found");
