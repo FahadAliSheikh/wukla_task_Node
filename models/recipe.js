@@ -15,7 +15,8 @@ const recipeSchema = mongoose.Schema({
     vegetarian: {
         type: Boolean,
         default: false
-    }
+    },
+    ratings:[Number]
 });
 
 module.exports = mongoose.model('Recipe', recipeSchema);
